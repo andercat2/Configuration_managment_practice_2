@@ -1,0 +1,25 @@
+@startuml
+rectangle "Порт для Windows + linux систем (280b09f)" as 280b09f
+rectangle "Update README.md (b0b553e)" as b0b553e
+b0b553e --> 280b09f
+rectangle "Create README.md (089bd81)" as 089bd81
+089bd81 --> b0b553e
+rectangle "Сделал проходные тесты для программы (5dfcf6f)" as 5dfcf6f
+5dfcf6f --> 089bd81
+rectangle "Заменил старый GUI, на новый (29f4ebe)" as 29f4ebe
+29f4ebe --> 5dfcf6f
+rectangle "Написал основную программу (b6458b7)" as b6458b7
+b6458b7 --> 29f4ebe
+rectangle "Написал версию GUI (07f8687)" as 07f8687
+07f8687 --> b6458b7
+rectangle "Создал систему (96d2832)" as 96d2832
+96d2832 --> 07f8687
+rectangle "Команды (a4a384e)" as a4a384e
+a4a384e --> 96d2832
+rectangle "Создал test_fz.zip (5bdc069)" as 5bdc069
+5bdc069 --> a4a384e
+rectangle "Начало работы (2d33b8c)" as 2d33b8c
+2d33b8c --> 5bdc069
+rectangle "commit (f4555e7)" as f4555e7
+f4555e7 --> 2d33b8c
+@enduml
